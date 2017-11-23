@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Refrigerator</title>
+	<link rel="stylesheet" type="text/css" href="ref.css">
+	<!--<script type="text/javascript" src="jquery.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="center-block">
+	<h1>Refrigerator</h1>
+	<div>
+		<button id="langEn">en</button>
+		<button id="langUa">ua</button>
+	</div>	
+</header>
+<section class="center-block shell">
+
+		
+	<form id="addSection">
+		
+		<h2>Add new</h2><img class="pic-info" src="info.svg" id="addInfo" / >
+		<br>
+			<label for="productName">Product</label>
+			<select name="productName" id="productName" / >			
+				
+			</select>
+			
+			<label for="amount">amount</label>
+			<input name="amount" type="number" id="amountNumber" class="smallNum" min="1" value="1" required>
+			<select id="unitsList" >				
+					
+			</select>
+				<img class="pic-info" src="info.svg" id="prodInfo" / >
+				<br>
+				<label for="buyDay">Date buy</label>
+			<input type="number" min="1" max="31" name="buyDay" id="firstDay" placeholder="dd" class="smallNum" required/>
+			<p>/</p>
+			<input type="number" min="1" max="12" name="buyMonth" id="firstMonth" placeholder="mm" class="smallNum" />
+			<p>/</p>
+			<input type="number" name="buyDYear" id="firstYear" class="mediumSize"/>
+
+				<label for="endDay">Best before</label>
+			<input type="number" min="1" max="31" name="endDay" id="lastDay" class="smallNum" placeholder="dd" />
+			<p>/</p>
+			<input type="number" min="1" max="12" name="endMonth" id="lastMonth" class="smallNum" placeholder="mm" />
+			<p>/</p>
+			<input type="number" name="endYear" id="lastYear" class="mediumSize" />
+			<img class="pic-info" src="info.svg" id="endDateInfo" / >
+			<br>
+				<label for="remind">Remind for</label>
+			<input type="number" min="1" name="remind" id="remindDay" class="smallNum">
+			<p>days</p><img class="pic-info" src="info.svg" id="remindInfo" / >
+			<label for="leave">or when leave</label>
+			<input type="number" class="smallNum" id="leaveNum" name="leave">
+
+			<p>product units</p><img class="pic-info" src="info.svg" id="leaveInfo" / >
+			<br>
+			<label for="place">Put in</label>
+			<select id="place" name="place">
+				<option value="Camera">Store cold</option>
+				<option value="Freezer">Freezer</option>
+			</select>
+			<label for="typeItem">type of product</label>
+			<select id="typeItem" name="typeItem">
+				
+			</select>
+			<img class="pic-info" src="info.svg" id="typeInfo" / >
+		<button id="btnAdd">add</button>
+		
+	</form>
+
+
+	
+		<div id="optionSection">
+			<h3>Setup lists</h3><img class="pic-info" src="info.svg" id="listInfo" / >
+			<form>
+			<label for="optProd">Product</label>
+			<br>
+			<input list="optProduct" name="optProd">
+			<datalist id="optProduct">
+				
+			</datalist>
+			<button class="decrease">-</button><button class="increase">+</button>
+			</form>
+		
+			<form>
+			<label for="optUnit">Unit</label>
+			<br>
+			<input list="optUnits" name="optUnit">
+			<datalist id="optUnits">
+				
+			</datalist>
+			<button class="decrease">-</button><button class="increase">+</button>
+			</form>
+			<form>
+			
+			
+			<label for="optType">Type item</label>
+			<br>
+			<input list="optType" name="optType">
+			<datalist id="optType">
+				
+			</datalist>
+			<button class="decrease">-</button><button class="increase">+</button>
+			</form>
+			
+
+		</div>
+	
+</section>
+	<div class="clearfix separate">
+	</div>
+<section class="center-block" id="tableSection">
+		
+		<table>
+		
+		<thead>
+			<tr>
+				<th rowspan="2" class="firstCol">product</th>
+				<th rowspan="2">amount</th>
+				<th rowspan="2">units</th>
+				<th colspan="3">Buy date</th>
+				
+				<th colspan="3">End date</th>
+				
+				<th rowspan="2">remind</th>
+				<th rowspan="2">re/move</th>
+			</tr>
+			<tr>
+				<th>day</th>
+				<th>month</th>
+				<th>year</th>
+				<th>day</th>
+				<th>month</th>
+				<th>year</th>
+				
+			</tr>
+		</thead>
+		<tbody id="freezTable">
+
+			
+		</tbody>
+		<caption class="Fridge-part">Freezer</caption>
+		</table>
+		<table>
+		<thead>
+			<tr>
+				<th rowspan="2" class="firstCol">product</th>
+				<th rowspan="2">amount</th>
+				<th rowspan="2">units</th>
+				<th colspan="3">Buy date</th>
+				
+				<th colspan="3">End date</th>
+				
+				<th rowspan="2">remind</th>
+				<th rowspan="2">remove move</th>
+			</tr>
+			<tr>
+				<th>day</th>
+				<th>month</th>
+				<th>year</th>
+				<th>day</th>
+				<th>month</th>
+				<th>year</th>
+				
+			</tr>
+		</thead>
+		<tbody id="cameraTable">
+			
+		</tbody>
+		<caption class="Fridge-part">Store cold</caption>
+		</table>
+
+		
+	
+	</section>
+<button id="removeData">Clear all data</button>	
+
+
+<script type="text/javascript" src="ref.js"></script>
+</body>
+</html>

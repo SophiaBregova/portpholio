@@ -1,0 +1,157 @@
+body{
+	margin: 0;
+	padding:0;
+	background-image: url('backpattern.svg');
+	background-size: 200px;
+}
+.center-block{
+	max-width: 900px;
+	margin: 0 auto;
+}
+header{
+	text-align: center;
+
+	position: relative;
+	color: #502410;
+}
+header div{
+	position: absolute;
+	top:0;
+	right: 0;
+
+}
+h1{
+	font-size: 1.7em;
+	font-family: monospace;
+}
+h2{
+	display: inline-block;
+	font-size: 1.3em;
+}
+h3{
+	display: inline-block;
+}
+.pic-info{
+	width: 1.3em;
+	margin: 0 10px;	
+	vertical-align: text-bottom;
+}
+form p{
+	display: inline-block;
+}
+
+.smallNum{
+	width: 40px;
+}
+.mediumSize{
+	width: 50px;
+}
+#productName{
+	width:160px;
+}
+#addSection{
+	
+	box-sizing: border-box;
+	float: left;
+}
+#optionSection{
+	
+	box-sizing: border-box;
+	float: left;
+	margin-left: 50px;
+}
+#optionSection input{
+	margin-bottom: 20px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+section{
+	border: 2px solid #88631b;
+	border-radius: 5px;
+	overflow: hidden;
+	/*margin-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;*/
+	padding: 10px 40px 40px 40px;
+	
+}
+.shell{
+	background-color: #cedea8;
+	background-image: url('kitchen-shell.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 90%;
+
+}
+
+.separate{
+	min-height: 35px;
+}
+#tableSection{
+	background-color: #e2f8f9;
+}
+table{
+	border-collapse: collapse;
+	width: 100%;
+	/*margin: 0 3%;*/
+}
+caption{
+	text-align: left;	
+	font-weight: normal;
+	border:1px solid black;	
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.Fridge-part{
+	padding-left: 0px;
+	font-style: normal;
+	margin-top:10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	border:0;
+
+}
+th, td{
+	padding: 2px 5px;
+	text-align: center;
+	border: 1px solid black;
+	width: 8%;
+}
+.firstCol{
+	width: 60px;
+}
+td:first-child {
+	width: 60px;	
+}
+
+#removeData{
+	float: right;
+	margin: 20px;
+
+}
+table button{
+	width: 30px;
+	text-align: center;
+	padding:0;
+	
+}
+
+table input{
+	width: 45px;
+}
+
+.remind{
+	background-color: yellow;
+}
+.endDate{
+	background-color: red;
+}
+.leaveSelect{
+	background-color: orange;
+}
